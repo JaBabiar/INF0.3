@@ -1,0 +1,4 @@
+1. Select imie,nazwisko from uczen
+2. Select imie,nazwisko from uczen WHERE id=2 
+3. select ocena from ocena where uczen_id=2 AND przedmiot_id=1; 
+4. select AVG(ocena) from ocena where uczen_id=2 AND przedmiot_id=1; 
