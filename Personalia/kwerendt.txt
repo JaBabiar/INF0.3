@@ -1,0 +1,25 @@
+CREATE DATABASE Personalia 
+
+CREATE TABLE Osoby ( 
+	id_osoby int unsigned primary key auto_increment,
+	imie varchar(32),
+	nazwisko varchar(32),
+	pesel char(11),
+)
+
+CREATE TABLE Dane(
+	id int unsigned primary_key auto_increment,
+	id_osoby int unsigned, 
+	data_ur DATE,
+	zawod varchar(64),
+	zdjecie varchar(64),
+	FOREIGN KEY (id_osoby) REFERENCES osoby(id_osoby)
+)
+																
+insert into osoby(imie,nazwisko,pesel) values("Jan","Kowalski",02271478910), ("Adam","abacki",22345678910),("Bartek","Babacki",12345678912);
+insert into dane(id_osoby,data_ur,zawod,zdjecie) VALUES
+(1,'2001-09-25', 'Piekarz', 'img1.png'),
+(2,'1991-07-27', 'Kierowca Tira ', 'img3.png'),
+(3,'1992-09-20', 'Piekarz', 'img3.png')
+
+SELECT osoby.imie, osoby.nazwisko, dane.zawod FROM osoby INNER JOIN dane ON osoby.id_osoby=dane.id_osoby and dane.zawod="piekarz"; 
