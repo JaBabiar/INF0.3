@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FFFAFA;
+}
+header,section{
+    display: flex;
+}
+.logo{
+    background-color: #FF7F50;
+    width: 25%;
+    height: 100px;
+}
+.banner{
+    background-color: #FF7F50;
+    text-align: center;
+    width: 75%;
+    height: 100px;
+    font-size: 130%;
+}
+.main{
+    background-color: #FF7F50;
+    padding: 70px;
+}
+.left{
+    width: 40%;
+    height: 400px;
+}
+.right {
+    text-align: right;
+    width: 60%;
+    height: 400px;
+}
+footer{
+    background-color: #FF7F50;
+    padding: 20px;
+}
+form{
+    margin: 80px;
+}
+table,th,td{
+    width: 80%;
+    color: white;
+    text-align: center;
+    border: 1px dotted #FFF;
+    border-collapse: collapse;
+}
+tr:hover{
+    background-color: #D3D3D3;
+    color: black;
+}
